@@ -1,0 +1,47 @@
+								SQL
+
+%: este signo es como un comodín. Ejemplo si yo pongo %rob me trae todo lo que termine con rob, si pongo rob% me trae lo que empieza con rob y si pongo %rob% me trae todo lo que contenga la palabra o caracteres rob.
+
+---------------------------------------  Funciones count, min, max, sum, year --------------------------------------------------	
+Select * form Peliculas where year(FechadeLanzamiento) between 1990 and 1999
+
+Select count(columna) as 'Cantidad de Películas'
+
+Select min(MinutosDuracion) form Peliculas, esto nos trae el valor menor y lo contrario para la función max
+
+Select sum(nombredelacolumna)/60 from Peliculas
+Esta consulta lo que hace es con el termino sum() sumar todos los valores de la columna que se ponga entre paréntesis
+y /60 lo que hace es dividir entre 60 o el número que esté a continuación de /
+
+
+----------------------------------------------  Tipos de datos ------------------------------------------------------------
+int: números enteros
+money: números con decimales
+datetime: fecha y horario 
+varchar: textos 
+bit: 1 o 0, también como true o false 
+
+---------------------------------------------- Cláusula where -------------------------------------------------------------
+where like texto
+
+select * form Peliculas where Titulo like 'Rob%'
+					............ in  between
+between: trae todos los datos que estén entre dato and dato.
+in(): trae todos los datos que estén entre paréntesis  						
+
+
+---------------------------------------------- Operadores AND OR NOT ------------------------------------------------------
+AND tiene se lee como "y". Ej: trae columna1 y columa2
+Or se lee como "o". Ej: trae columna1 o columna2
+NOT Se lee  como "no cumplan" y seguido de la condición 
+
+
+
+
+
+
+
+
+
+
+
